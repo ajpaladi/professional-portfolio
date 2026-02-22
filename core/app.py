@@ -303,7 +303,7 @@ elif page_selection == "Skills and Competencies":
     """
     **Languages & Libraries**
     - Python | Proficiency (10+ years experience)
-        -   Pandas, Pydantic, GeoPandas, Plotly, Seaborn, Matplotlib, scikit-learn, TensorFlow, HuggingFace, Ollama, PySpark,
+        -   Pandas, GeoPandas, Pydantic, Plotly, Seaborn, Matplotlib, scikit-learn, TensorFlow, HuggingFace, Ollama, PySpark, requests,
             FastAPI, Flask, Streamlit, Dash, Arcpy, Transformers, LangChain, GDAL, Rasterio, Shapely, Fiona, OSMNX, Telethon, Selenium, BeautifulSoup, 
             Requests, Boto3, Click, Pytest, geemap
     - SQL | Proficiency (10+ years experience)
