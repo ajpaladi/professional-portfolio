@@ -19,16 +19,14 @@ page_selection = st.sidebar.selectbox("Select a page", pages)
 
 st.sidebar.write("Quick Links")
 
-resume_path = Path("https://github.com/ajpaladi/professional-portfolio/blob/main/data/paladino_resume_20260101.pdf")  # adjust for your file
-with resume_path.open("rb") as f:
-    pdf_bytes = f.read()
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
 
 st.sidebar.download_button(
-    "Download Latest Resume", 
-    data=pdf_bytes, 
-    file_name="resume.pdf", 
-    type="primary",
-    mime="application/pdf")
+    "Download Latest Resume",
+    data=(DATA_DIR / "paladino_resume_20260101.pdf").read_bytes(),
+    file_name="Andrew_Paladino_Resume.pdf",
+    mime="application/pdf",
+)
 
 st.sidebar.link_button(
     "LinkedIn",
@@ -63,7 +61,7 @@ st.sidebar.link_button(
 if page_selection == "About Me":
 
     st.title("Welcome to my Portfolio!")
-    st.image('https://github.com/ajpaladi/professional-portfolio/blob/main/data/IMG_0358.jpg', caption='Portrait of Andy, Fall, 2025')
+    st.image(DATA_DIR / "IMG_0358.jpg", caption="Portrait of Andy, Fall, 2025")
 
     st.subheader("About Me")
     st.write("""
