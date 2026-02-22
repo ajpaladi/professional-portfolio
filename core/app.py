@@ -141,7 +141,7 @@ elif page_selection == "Work Experience":
     st.subheader("Senior Data Engineer, Atreides")
     st.write("Dates: 2025 - Present")
     st.write("Industry & Sector: Defense, Startup")
-    st.write("Technologies: Python, PySpark, SQL, Temporal, Kubernetes, Docker, AWS EC2/RDS, PostgreSQL")
+    st.write("Technologies: Python, PySpark, SQL, Temporal, Kubernetes, Docker, AWS EC2/RDS, PostgreSQL, Grafana")
     st.write("""
              
              Responsibilities/Accomplishments:
