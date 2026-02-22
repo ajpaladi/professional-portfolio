@@ -19,7 +19,7 @@ page_selection = st.sidebar.selectbox("Select a page", pages)
 
 st.sidebar.write("Quick Links")
 
-resume_path = Path("/Users/andrewpaladino/Documents/projects/prof_portfolio/data/paladino_resume_20260101.pdf")  # adjust for your file
+resume_path = Path("https://github.com/ajpaladi/professional-portfolio/blob/main/data/paladino_resume_20260101.pdf")  # adjust for your file
 with resume_path.open("rb") as f:
     pdf_bytes = f.read()
 
@@ -63,7 +63,7 @@ st.sidebar.link_button(
 if page_selection == "About Me":
 
     st.title("Welcome to my Portfolio!")
-    st.image('/Users/andrewpaladino/Documents/projects/prof_portfolio/data/IMG_0358.jpg', caption='Portrait of Andy, Fall, 2025')
+    st.image('https://github.com/ajpaladi/professional-portfolio/blob/main/data/IMG_0358.jpg', caption='Portrait of Andy, Fall, 2025')
 
     st.subheader("About Me")
     st.write("""
